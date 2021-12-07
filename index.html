@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Store</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C400&display=swap">
+    <style>
+        * {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        html, body{
+            font-weight: 400;
+            line-height: 24px;
+            color: #ffffff;
+            background-color: #14182a;
+            padding: 0;
+            margin: 0;
+        }
+
+        .top{
+            top: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            background-color: #1b2039;
+            height: 60px;
+        }
+        .header{
+            color: #fff;
+            background-color: transparent;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .logo{
+            float: left;
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        .ms_top_trend{
+            float: right;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .ms-color{
+            color: #3bc8e7;
+        }
+        .padding-16{
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .padding-32{
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        .main{
+            max-width: 1200px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .center{
+            text-align: center;
+        }
+        .row{
+            padding: 0 8px;
+        }
+        .row:before{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .ms-heading{
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .item{
+            float: left;
+            width: 22.9%;
+            padding: 0 8px;
+            text-align: center;
+        }
+        .item > img{
+            width: 100%;
+            vertical-align: middle;
+            border-style: none;
+            border-radius: 10px;
+        }
+        .item > h3{
+            margin: 10px 0 5px;
+        }
+        .item > p{
+            margin: 0;
+            font-size: 14px;
+        }
+        .center .bar{
+            display: inline-block;
+            width: auto;
+        }
+        .bar{
+            overflow: hidden;
+        }
+        .bar .button{
+            white-space: normal;
+        }
+        .bar .bar-item{
+            padding: 8px 16px;
+            float: left;
+            width: auto;
+            border: none;
+            display: block;
+            outline: 0;
+        }
+        .button{
+            text-align: center;
+            cursor: pointer;
+            vertical-align: middle;
+            text-decoration: none;
+            overflow: hidden;
+            color: inherit;
+            background-color: inherit;
+        }
+        .black{
+            color: #fff !important;
+            background-color: #000 !important;
+        }
+        hr{
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+        .about{
+            font-weight: 400;
+        }
+        .about h3{
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .about h4{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .about h6{
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .about img{
+            display: block;
+            margin: auto;
+        }
+        .footer h3{
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+        .third{
+            float: left;
+            width: 33.2%;
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="header padding-16">
+        <div class="logo">
+            Music Store
+        </div>
+        <div class="ms_top_trend">
+            <span class="ms-color">Trending Songs :</span> Dream your moment, Until i met you, Gim
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="ms-heading">
+        <h3  class="ms-color">Recently Played</h3>
+    </div>
+    <div class="row padding-16">
+        <div class="item">
+            <img src="music%20store/img/r_music1.jpg">
+            <h3>Dream Your Moment (Duet)</h3>
+            <p>Ava Cornish & Brian Hill</p>
+        </div>
+        <div class="item">
+            <img src="music%20store/img/r_music2.jpg">
+            <h3>Until I Met You</h3>
+            <p>Ava Cornish & Brian Hill</p>
+        </div>
+        <div class="item">
+            <img src="music%20store/img/r_music3.jpg">
+            <h3>Gimmy Some Courage</h3>
+            <p>Ava Cornish & Brian Hill</p>
+        </div>
+        <div class="item">
+            <img src="music%20store/img/r_music4.jpg">
+            <h3>Dark Alley Acoustics</h3>
+            <p>Ava Cornish & Brian Hill</p>
+        </div>
+    </div>
+    <div class="ms-heading">
+        <h3 class="ms-color">Feature Albums</h3>
+    </div>
+    <div class="row padding-16">
+        <div class="item">
+            <img src="music%20store/img/song1.jpg">
+            <h4>Best of Ava Cornish</h4>
+        </div>
+        <div class="item">
+            <img src="music%20store/img/song2.jpg">
+            <h4>Until I Met You</h4>
+        </div>
+        <div class="item">
+            <img src="music%20store/img/song3.jpg">
+            <h4>Gimme Some Courage</h4>
+        </div>
+        <div class="item">
+            <img src="music%20store/img/song5.jpg">
+            <h4>Dark Alley Acoustics</h4>
+        </div>
+    </div>
+</div>
+<div class="row center padding-32">
+    <div class="bar">
+        <a href="#" class="bar-item button hover-black"><<</a>
+        <a href="#" class="bar-item button hover-black">1</a>
+        <a href="#" class="bar-item button hover-black">2</a>
+        <a href="#" class="bar-item button hover-black">3</a>
+        <a href="#" class="bar-item button hover-black">4</a>
+        <a href="#" class="bar-item button hover-black">>></a>
+    </div>
+</div>
+<hr>
+<!--About Section-->
+<div class="about row center padding-32">
+    <h1 class="ms-color">Trending Songs</h1>
+    <img src="music%20store/img/banner.png" class="w3-image">
+    <div class="padding-32">
+        <h4>Record Breaking Albums !</h4>
+        <h6><i>With Pasion For Real, Good Music</i></h6>
+        <p>Dream your moment, Until I Met You, Gimme Some Courage, Dark Alley, One More Of A Stranger, Endless Things, The Heartbeat
+        Stops, Walking Promises, Desired Games and many more ...</p>
+    </div>
+</div>
+<hr>
+<!--Footer Section-->
+<div class="footer row padding-32">
+    <div class="third">
+        <h3 class="ms-color">Music Store Stations</h3>
+        <p>Dream your moments , Until I Met You, Gimme Some Courage, Dark Alley, One More Of A Stranger, Endless.
+        Things, The Heartbeat Stops, Walking Promises, Desired Games and many more...
+        </p>
+        <p>
+            Powered by <a href="#">aptech.ac.vn</a>
+        </p>
+    </div>
+    <div class="third">
+        <h3 class="ms-color">Download Our App</h3>
+        <p>Go mobile with our app.
+        Listen to your favourite songs at just one click. Download Now !
+        </p>
+        <a href="#"><img src="music%20store/img/google_play.jpg" </a>
+        <a href="#"><img src="music%20store/img/app_store.jpg" </a>
+        <a href="#"><img src="music%20store/img/windows.jpg" </a>
+    </div>
+    <div class="third">
+        <h3 class="ms-color">Contact Us</h3>
+        <p><span class="con-title">Call Us :</span>
+        <span>(+84) 24-7300-8855, (+84) 28-7300-8866</span></p>
+        <p><span class="con-title">Email us: </span>
+        <span><a href="#">demo@gmail.com</a>, <a href="fpt-aptech@gmail.com"</a> </span>
+        </p>
+        <p><span class="con-title">Walk In :</span>
+        <span>Số 8, Tôn Thất Thuyết, Mỹ Đình, Từ Liêm, HN</span></br>
+        <span>590 Cách Mạng Tháng Tám, Quận 3, TP.HCM</span>
+        </p>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
